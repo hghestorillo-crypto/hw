@@ -7,12 +7,15 @@
 
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Hind+Madurai:wght@300;400;500;600;700&family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
 <header class="header">
-  <div class="header-container">
+  <div class="container header-container">
 
     <img class="header-logo" src="/images/Logo.svg" alt="Логотип сайту">
 
@@ -25,7 +28,7 @@
       </ul>
     </nav>
 
-    <ul class="header-social-list">
+    <ul class="header-social-list social-list">
       <li class="header-social-item"><a class="header-social-link" href="#"><img class="header-social-icon" src="/images/f.svg"></a></li>
       <li class="header-social-item"><a class="header-social-link" href="#"><img class="header-social-icon" src="/images/in.svg"></a></li>
       <li class="header-social-item"><a class="header-social-link" href="#"><img class="header-social-icon" src="/images/youtube.svg"></a></li>
@@ -39,126 +42,294 @@
 
 
 <section id="hero" class="hero">
-  <div class="hero-content">
+  <div class="container hero-container hero-content">
+<div class="hero__overview">
     <p class="hero-subtitle">Sweet fun, full of milk.</p>
-    <h1 class="hero-title">Feel inside cold with our delicious <span class="hero-accent">ice-cream</span></h1>
-    <p class="hero-description">Some food has looked so awful...</p>
-    <a class="hero-button" href="#products">Buy now</a>
-  </div>
 
-  <img class="hero-image" src="/images/img-main.png" alt="Морозиво">
+    <h1 class="hero-title title-text">
+      Feel inside cold with our delicious 
+      <span class="hero-accent">ice-cream</span>
+    </h1>
+
+    <p class="hero-description main-text">
+      Some food has looked so awful that it's looked like something that the dog's brought home, yet after one mouthful I've been left eating my thoughts, my words.
+    </p>
+
+    <button class="hero-button">Buy Now</button>
+</div>
+<div class="hero-image-wrapper">
+    <img class="hero-image" src="/images/img-main.png" alt="Морозиво"/>
+</div>
+  </div>
 </section>
 
-<!-- ABOUT -->
-<section id="about" class="about">
-  <h2 class="about-title">About us</h2>
-  <p class="about-text">
-    Porem ipsum dolor sit amet
-    <span class="about-accent">Nunc vulputate libero...</span>
-  </p>
 
-  <img class="about-image-milk" src="/images/img-milk.png">
-  <img class="about-image-pistachio" src="/images/img-pistachio.png">
-  <img class="about-image-strawberry" src="/images/img-strawberry.png">
+<section id="about" class="about">
+  <div class="container about-container">
+    <h2 class="about-title title-text">
+      
+    </h2>
+    <p class="about-text  main-text">
+      Porem ipsum dolor sit amet, consectetur adipiscing elit.
+      <span class="about-accent">
+      Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent
+      </span>
+      per conubia nostra, per inceptos himenaeos.
+    </p>
+    
+    <img class="about-img about-image-milk" src="/images/img-milk.png">
+    <img class="about-img about-image-pistachio" src="/images/img-pistachio.png">
+    <img class="about-img about-image-strawberry" src="/images/img-strawberry.png">
+    
+  </div>
 </section>
 
 
 <section id="products" class="products">
-  <h2 class="products-title">Our product</h2>
-
-  <ul class="products-list">
-    <li class="products-item">
-
-      <img class="products-image" src="/images/product 1.png">
-
-      <div class="products-card">
-        <h3 class="products-name">Brown bread</h3>
-        <p class="products-description">Bon Au Pain is a pioneer...</p>
-
-        <p class="products-price">
-          <span class="products-price-current">$19.55</span>
-          <sub class="products-price-old">$22.55</sub>
-        </p>
-
-        <button class="products-button" type="button">Buy now</button>
+  <div class="container products-container">
+    <div class="products__title-wrapper">
+      <h2 class="products-title">Our Product</h2>
+      <div class="products-navigation">
+        <button class="product__navigation-btn">
+          <img src="/images/left.png" alt="left">
+        </button>
+        <button class="product__navigation-btn">
+          <img src="/images/right.png" alt="right">
+        </button>
       </div>
+    </div>
+  <ul class="products-list">
+  <li class="products-item">
+    <img class="products-image" src="/images/product 1.png">
+    <div class="products-card">
+      <h3 class="products-name title-text">Brown bread</h3>
+      <p class="products-description main-text">
+        Bon Au Pain is a pioneer in the healthy fast food scene.Bon
+      </p>
+      <p class="products-price">
+        <span class="products-price-current">$19.55</span>
+        <sub class="products-price-old">$22.55</sub>
+      </p>
+      <button class="products-button">Buy now</button>
+    </div>
+  </li>
 
-    </li>
-  </ul>
+  <li class="products-item">
+    <img class="products-image" src="/images/product 2.png">
+    <div class="products-card">
+      <h3 class="products-name title-text">Brown bread</h3>
+      <p class="products-description main-text">
+        Bon Au Pain is a pioneer in the healthy fast food scene.Bon
+      </p>
+      <p class="products-price">
+        <span class="products-price-current">$19.55</span>
+        <sub class="products-price-old">$22.55</sub>
+      </p>
+      <button class="products-button">Buy now</button>
+    </div>
+  </li>
+
+  <li class="products-item">
+    <img class="products-image" src="/images/product 3.png">
+    <div class="products-card">
+      <h3 class="products-name title-text">Brown bread</h3>
+      <p class="products-description main-text">
+        Bon Au Pain is a pioneer in the healthy fast food scene.Bon
+      </p>
+      <p class="products-price">
+        <span class="products-price-current">$19.55</span>
+        <sub class="products-price-old">$22.55</sub>
+      </p>
+      <button class="products-button">Buy now</button>
+    </div>
+  </li>
+
+  <li class="products-item">
+    <img class="products-image" src="/images/product 4.png">
+    <div class="products-card">
+      <h3 class="products-name title-text">Brown bread</h3>
+      <p class="products-description main-text">
+        Bon Au Pain is a pioneer in the healthy fast food scene.Bon
+      </p>
+      <p class="products-price">
+        <span class="products-price-current">$19.55</span>
+        <sub class="products-price-old">$22.55</sub>
+      </p>
+      <button class="products-button">Buy now</button>
+    </div>
+  </li>
+<li class="products-item">
+  <img class="products-image" src="/images/product 5.png">
+
+  <div class="products-card">
+    <h3 class="products-name title-text">
+      Brown bread
+    </h3>
+
+    <p class="products-description main-text">
+      Bon Au Pain is a pioneer in the healthy fast food scene.Bon
+    </p>
+
+    <p class="products-price">
+      <span class="products-price-current">$19.55</span>
+      <sub class="products-price-old">$22.55</sub>
+    </p>
+
+    <button class="products-button" type="button">
+      Buy now
+    </button>
+  </div>
+</li> 
+</ul>
+  </div>
 </section>
 
 
 <section id="app" class="app">
-  <div class="app-content">
-
-    <h2 class="app-title">Simple way <span class="app-accent">to order</span> your food</h2>
-    <p class="app-description">Some food has looked so awful...</p>
-
+  <div class="container app-container">
+    <div class="app-overview">
+    <h2 class="app-title title-text">
+      Simple way <span class="app-accent">to order</span> your food
+    </h2>
+    <p class="app-description  main-text">
+      Some food has looked so awful that it's looked like something that the dog's brought home, yet after one mouthful I've been left eating my thoughts, my words.
+    </p>
     <ol class="app-steps">
-      <li class="app-step"><span class="app-step-number">1</span> Select Your Food</li>
-      <li class="app-step"><span class="app-step-number">2</span> Add To Cart</li>
-      <li class="app-step"><span class="app-step-number">3</span> Order Your Food</li>
+      <li class="app-step">
+        <p class="steps__item-text"> 
+        <span class="app-step-number">1</span>
+        Select Your Food
+      </p>
+      </li>
+      <li class="app-step">
+        <p class="steps__item-text">
+        <span class="app-step-number">2</span>
+        Add To Cart
+      </p>
+      </li>
+      <li class="app-step">
+        <p class="steps__item-text">
+        <span class="app-step-number">3</span>
+        Order Your Food
+      </p>
+      </li>
     </ol>
-
-    <img class="app-store" src="/images/app store.png">
+    <div class="app-download">
+      <img class="app-store" src="/images/app store.png">
     <img class="app-google" src="/images/google play.png">
   </div>
-
-  <img class="app-image" src="/images/snapedit_1766787070595 1.png">
+    </div>
+      <div class="app__img-wrapper">
+    <img class="app-image" src="/images/snapedit_1766787070595 1.png">
+  </div>
+    
+    
+  </div>
 </section>
 
 
 <section id="contact-form" class="contact">
-  <h2 class="contact-title">
-    <span class="contact-accent">Have Question</span> in Mind?
-  </h2>
+  <div class="container contact-container">
+<div class="contact__inner-wrapper">
+    <h2 class="contact-title title-text">
+      <span class="contact-accent">Have Question</span> in Mind?<br> Let us help you
+    </h2>
 
-  <form class="contact-form">
-    <input class="contact-input" placeholder="Enter your question" type="text">
-    <button class="contact-button" type="submit">Send</button>
-  </form>
+    <form class="contact-form">
+
+      <input class="contact-input"
+            placeholder="Enter your question"
+            type="text">
+
+      <button class="contact-button" type="submit">
+        Send
+      </button>
+    </form>
+</div>
+  </div>
 </section>
 
 </main>
 
 
 <footer class="footer">
-
-  <div class="footer-info">
-    <img class="footer-logo" src="/images/Logo.svg">
-    <p class="footer-text">Some food has looked so awful...</p>
-
-    <ul class="footer-social">
-      <li class="footer-social-item"><img class="footer-social-icon" src="./images/t.svg"></li>
-      <li class="footer-social-item"><img class="footer-social-icon" src="./images/f.svg"></li>
-      <li class="footer-social-item"><img class="footer-social-icon" src="./images/in.svg"></li>
-      <li class="footer-social-item"><img class="footer-social-icon" src="./images/youtube.svg"></li>
-    </ul>
+  <div class="container footer-wrapper">
+    <div class="footer-content">
+    <div class="footer-info">
+      <img class="footer-logo" src="/images/Logo.svg">
+      <p class="footer-text main-text">
+        Some food has looked so awful that it's looked like something
+        that the dog's brought home.
+      </p>
+      <ul class="footer-social">
+        <li class="footer-social-item social-list">
+          <a class="footer-social-link" href="#"><img class="footer__social-icon" src="./images/t.svg"></a>
+        </li>
+        <li class="footer-social-item">
+          <a class="footer-social-link" href="#"><img class="footer__social-icon" src="./images/f.svg"></a>
+        </li>
+        <li class="footer-social-item">
+          <a class="footer-social-link" href="#"><img class="footer__social-icon" src="./images/in.svg"></a>
+        </li>
+        <li class="footer-social-item">
+          <a class="footer-social-link" href="#"><img class="footer__social-icon" src="./images/youtube.svg"></a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-menu">
+      <h2 class="footer-title title-text">
+        Menu
+      </h2>
+      <ul class="footer-menu-list">
+        <li class="footer-menu-item">
+          <a class="footer-menu-link" href="#hero">
+            Main
+          </a>
+        </li>
+        <li class="footer-menu-item">
+          <a class="footer-menu-link" href="#about">
+            About us
+          </a>
+        </li>
+        <li class="footer-menu-item">
+          <a class="footer-menu-link" href="#products">
+            Trainers
+          </a>
+        </li>
+        <li class="footer-menu-item">
+          <a class="footer-menu-link" href="#app">
+            App
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-contacts">
+      <h2 class="footer-title title-text">
+        Contacts
+      </h2>
+      <a class="footer-phone" href="tel:8314663000">
+        831.466.3000
+      </a>
+      <a class="footer-email" href="mailto:info@basketball.com">
+        info@basketball.com
+      </a>
+    </div>
+    <div class="footer-location">
+      <h2 class="footer-title title-text">
+        Location
+      </h2>
+      <address class="footer-address">
+        1347 Pacific Avenue, Suite 201
+      </address>
+      <address class="footer-address">
+        Santa Cruz, CA, 95060
+      </address>
+    </div>
+    </div>
   </div>
-
-  <div class="footer-menu">
-    <h2 class="footer-title">Menu</h2>
-    <ul class="footer-menu-list">
-      <li class="footer-menu-item"><a class="footer-menu-link" href="#hero">Main</a></li>
-      <li class="footer-menu-item"><a class="footer-menu-link" href="#about">About us</a></li>
-      <li class="footer-menu-item"><a class="footer-menu-link" href="#products">Trainers</a></li>
-      <li class="footer-menu-item"><a class="footer-menu-link" href="#app">App</a></li>
-    </ul>
-  </div>
-
-  <div class="footer-contacts">
-    <h2 class="footer-title">Contacts</h2>
-    <a class="footer-phone" href="tel:8314663000">831.466.3000</a>
-    <a class="footer-email" href="mailto:info@basketball.com">info@basketball.com</a>
-  </div>
-
-  <div class="footer-location">
-    <h2 class="footer-title">Location</h2>
-    <address class="footer-address">1347 Pacific Avenue, Suite 201</address>
-    <address class="footer-address">Santa Cruz, CA, 95060</address>
-  </div>
-
 </footer>
+</body>
+</html>
 
 </body>
 </html>
