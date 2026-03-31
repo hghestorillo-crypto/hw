@@ -1,9 +1,538 @@
-html {
-  
-.raleway-<uniquifier> {
-  font-family: "Raleway", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
+  :root {
+  --mainbg: #000000;
+  --secondarybg:#151515;
+  --primary: #FFFFFF;
+  --accent: #D23166;
+  --secondary: #FAFAFA; }
+  body{
+    color: var(--primary);
+    background-color:var(--mainbg);
+    font-family: 'Manrope' , sans-serif;
+    .header{
+      padding-block: 40px;
+    }
+  }
+img{
+  display: block;
+  max-width: 100%;
 }
+a{color: inherit;
+  text-decoration: none;
+  display: inline-block;
+}
+button{
+  font-family:'Hind Madurai', sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  text-transform: capitalize;
+  color: var(--secondary);
+  background-color: var(--accent);
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+ul,ol{
+  list-style: none;
+}
+section{
+  padding-block: 60px;
+}
+.container{
+  width: 100%;
+  max-width: 1440px;
+  margin-inline: auto;
+  padding-inline: 96px ;
+}
+.title-text{
+  font-family:'Alexandria' sans-serif;
+  font-weight: 400;
+  font-size: 57.33px;
+  line-height: 0.94;
+  letter-spacing: -4px;
+  opacity: 90%;
+}
+.main-text{
+  font-size: 18px;
+  line-height: 1.5;
+}
+.title-text span {
+color: var(--accent);
+}
+
+.about-accent{
+  color: rgba(255, 255, 255, 0.2);
+}
+.hero__title {
+  font-family: "Alexandria";
+  font-size: 57px;
+  line-height: 94%;
+  letter-spacing: -7%;
+}
+
+.primary-text {
+font-family: "Manrope";
+font-size: 18px;
+line-height: 27px;
+color: var(--primary)
+}
+.about__text{
+  font-family: "Alexandria";
+  font-size: 57.33px;
+  color: var(--primary);
+  text-align: center;
+  line-height: 100%;
+}
+.about__text span{
+  color: rgba(255, 255, 255, 0.2);
+}
+.header{
+  height: 132px;
+  margin-inline: 96px;
+}
+.header-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1248px;
+  height: 52px;
+}
+.navigation-list{
+  list-style: none;
+  max-width: 507px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+.header-nav-list{
+  display: flex;
+  gap: 95px;
+}
+.social-list{
+  display: flex;
+  gap: 15px;
+}
+.header-social-link{
+  width: 36px;
+  height: 36px;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+.hero-container{
+  display: flex;
+  justify-content: space-between;
+  max-width: 1248px;
+  height: 588px;
+}
+.hero__overwiev{
+  max-width: 587px;
+  width: 100%;
+  height: 338px;
+  margin-bottom: 60px;
+}
+
+.hero-image-wrapper{
+max-width: 588px;
+width: 100%;
+height: 588px;
+margin-left: 73px;
+}
+
+.hero-subtitle{
+  font-family:'Manrope' sans-serif;
+  font-size: 14px;
+  margin-bottom: 20px;
+  letter-spacing: 1.4px;
+  line-height: 1;
+}
+.hero-title{
+  margin-bottom: 16px;
+}
+.hero-description{
+  margin-bottom: 48px;
+  opacity: 60%;
+}
+.hero-button{
+  max-width: 165px;
+  width: 100%;
+  padding-block: 13.5px;
+font-family: 'Hind Madurai' sans-serif;
+font-weight: 700;
+}
+.about-text{
+  font-family: 'Alexandria' sans-serif;
+  font-size: 57.33px;
+  letter-spacing: 2.px;
+  text-align: center;
+  line-height: 100% ;
+}
+.about-container{
+position: relative;
+max-width: 1248px;
+height: 399px;
+}
+.about-img{
+  position: absolute;
+}
+.about-image-pistachio{
+  right: 216px;
+  top: -69px;
+}
+.about-image-milk{
+  top: 115px;
+  left: 129px;
+}
+.about-image-strawberry{
+  bottom: 70px;
+  left: 720px;
+}
+.products-container{
+overflow-x: scroll;
+}
+.products__title-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 56px;
+}
+.products-navigation{
+  display: flex;
+  gap: 18px;
+}
+.product__navigation-btn{
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff10;
+}
+.products-title{
+  font-family: 'Roboto' sans-serif;
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 94%;
+  line-height: 3.92px;
+  position: relative;
+  left: 50px;
+  margin-bottom: 56px;
+}
+.products-list{
+  display: flex;
+  gap: 20px;
+  
+}
+.products-item{
+  flex-basis: 297px;
+  flex-shrink: 0;
+}
+.products-image{
+width: 100%;
+height: 270px;
+object-fit: cover;
+object-position: center;
+border-radius: 20px;
+}
+.products-card{
+  position: relative;
+  top: -24px;
+  padding: 24px 30px;
+  background-color: var(--secondarybg);
+  border-radius: 20px;
+  flex-grow: 1;
+}
+.products-name{
+  font-family: 'Hind Madurai', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1;
+  margin-bottom: 18px;
+  letter-spacing: 0%;
+}
+.products-description{
+  font-size: 16px;
+  line-height: 24PX;
+  opacity: 70%;
+  margin-bottom: 28px;
+}
+.products-price-current{
+  font-family: 'Hind Madurai', sans-serif;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 1;
+  margin-bottom: 16px;
+}
+.products-price-old{
+  font-size: 20px;
+  text-decoration: line-through;
+  opacity: 70%;
+}
+.products-button{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+  padding: 15px 0;
+  width:100% ; 
+}
+
+.app-container{
+display: flex;
+}
+.app-overview{
+width: 466px;
+height: 510px;
+}
+.app-title{
+  margin-bottom: 16px;
+  font-family: 'Roboto' sans-serif;
+  font-weight: 500;
+}
+.app-description{
+  opacity:60%;
+  font-family: 'Manrope' sans-serif;
+  margin-bottom: 64px;
+}
+.app__img-wrapper{
+  flex-shrink: 0;
+  flex: 1 0 782px;
+}
+.app-steps{
+  margin-bottom: 48px;
+}
+.steps__item-text{
+  opacity: 60%;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.steps__item-text span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:48px; 
+  height: 48px;
+  border: 1px solid #FFFFFF;
+border-radius: 50%;
+}
+.app-step:not(:last-child){
+margin-bottom: 26px;
+}
+.app-step{
+  position: relative;
+}
+.app-step:not(:last-child)::after{
+content: '';
+position: absolute;
+left: 25px;
+bottom: -50%;
+width: 1px;
+height: 22px;
+background-color: var(--primary);
+opacity:60%;
+transform: translateX(-50%);
+}
+.app-download{
+  display: flex;
+  gap: 12px;
+}
+
+
+.contact{
+  height: 684px;
+  background-image:url(/images/img-form-Background.png) ;
+  background-position: center;
+  background-size: cover;
+}
+.contact-container{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact__inner-wrapper{
+  max-width: 653px;
+  margin: 0 auto;
+}
+.contact-title{
+  text-align: center;
+  margin-bottom: 56px;
+}
+.contact-form{
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 9999px;
+  display: flex;
+}
+.contact-input{
+  background-color: transparent;
+  border: none;
+  padding: 23.5px 0px 23.5px 30px;
+  width: 100%;
+  font-size: 20px;
+  color: var(--primary);
+}
+.contact-input:focus{
+  outline: none;
+}
+.contact-input::placeholder{
+font-size: 20px;
+}
+.contact-button{
+  border-radius: 9999px;
+  padding-inline: 44px;
+  font-size: 20px;
+  font-family:'Roboto' sans-serif;
+  font-weight: 500;
+}
+.footer{
+  background-color: var(--secondarybg);
+  padding-block: 100px;
+}
+.footer-wrapper{
+  display: flex;
+  gap: 176px;
+}
+.footer-info{
+  width: 212px;
+}
+.footer-logo{
+  max-width: 176px;
+  width:100%;
+  margin-bottom: 24px;
+}
+.footer-logo img{
+  width: 100%;
+}
+.footer-social-link{
+  width: 36px;
+  height: 36px;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: -100px;
+}
+.footer-text{
+  font-size: 14px;
+}
+.footer-social{
+  display: flex;
+  gap: 15.4px;
+}
+.footer-content{
+  width: 1247px;
+  height: 196px;
+  display: flex;
+  gap: 176px;
+}
+
+
+
+
+.footer {
+  background-color: var(--secondarybg) ;
+  color: #ffffff;
+  padding: 60px 0 30px;
+  position: relative;
+  margin: 0 , 0;
+}
+
+
+.footer-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+body {
+  margin: 0;
+}
+
+.footer::before {
+  display: none;
+}
+
+.footer .container {
+  padding: 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.footer-info {
+  max-width: 250px;
+}
+
+.footer-logo {
+  margin-bottom: 20px;
+}
+
+.footer-text {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #bbb;
+}
+
+.footer-social {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.footer__social-icon {
+  width: 20px;
+  height: 20px;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+
+
+.footer-title {
+  font-size: 20px;
+  margin-bottom: 15px;
+  letter-spacing: 0%;
+  font-family: 'Manrope' sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: none;
+}
+
+.footer-menu-list {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-menu-link {
+  display: block;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  margin-bottom: 8px;
+  transition: 0.3s;
+}
+
+
+.footer-phone,
+.footer-email {
+  display: block;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.footer-address {
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 5px;
+  font-family: 'Manrope';
 }
